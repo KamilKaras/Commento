@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Commento.Helpers
+namespace Commento
 {
     public static class Conversion
     {
@@ -15,7 +13,6 @@ namespace Commento.Helpers
                      .Select(x => Convert.ToByte(inputToDecode.Substring(x, 2), 16))
                      .ToArray();
             return decodeByte;
-
         }
 
         public static string ConvertStringToHex(String input)
